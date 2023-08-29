@@ -1,0 +1,19 @@
+indent = 4
+margin = 120
+
+always_for_in = true
+whitespace_typedefs = true
+remove_extra_newlines = true
+
+long_to_short_function_def = true
+whitespace_in_kwargs = false
+trailing_comma = true
+
+conditional_to_if = true
+join_lines_based_on_source = false
+
+indent_submodule = true
+
+format_docstrings = true
+format_markdown = true
+overwrite = true

@@ -1,0 +1,86 @@
+[
+    {
+        "name": "Control Plate",
+        "id": 50,
+        "operations": [
+            {
+                "id": 10,
+                "sort": 10,
+                "machine": 971,
+                "duration": 326,
+                "setup": 900,
+                "processparam": 0.92
+            },
+            {
+                "id": 11,
+                "sort": 11,
+                "machine": 971,
+                "duration": 113,
+                "setup": 900,
+                "processparam": 0.97
+            },
+            {
+                "id": 20,
+                "sort": 20,
+                "machine": 985,
+                "duration": 780,
+                "setup": 0,
+                "processparam": 0
+            },
+            {
+                "id": 40,
+                "sort": 40,
+                "machine": 972,
+                "duration": 79,
+                "setup": 300,
+                "processparam": 0.11
+            },
+            {
+                "id": 41,
+                "sort": 41,
+                "machine": 972,
+                "duration": 174,
+                "setup": 300,
+                "processparam": 0.005
+            },
+            {
+                "id": 50,
+                "sort": 50,
+                "machine": 981,
+                "duration": 780,
+                "setup": 0,
+                "processparam": 0
+            }
+        ]
+    },
+    {
+        "name": "Base plate",
+        "id": 2,
+        "operations": [
+            {
+                "id": 10,
+                "sort": 10,
+                "machine": 971,
+                "duration": 235,
+                "setup": 62,
+                "processparam": 0.1
+            },
+            {
+                "id": 20,
+                "sort": 20,
+                "machine": 981,
+                "duration": 71,
+                "setup": 136,
+                "processparam": 0
+            },
+            {
+                "id": 30,
+                "sort": 30,
+                "machine": 971,
+                "duration": 143,
+                "setup": 90,
+                "processparam": 0.2
+            }
+        ]
+    }
+]

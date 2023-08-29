@@ -1,0 +1,67 @@
+{
+    "setup": {
+        "environment_import": "eta_utility.eta_x.envs.JuliaEnv",
+        "agent_import": "eta_utility.eta_x.agents.Nsga2",
+        "vectorizer_import": "eta_utility.eta_x.envs.NoVecEnv",
+        "tensorboard_log": true
+    },
+    "settings": {
+        "episode_duration": 25200,
+        "sampling_time": 1,
+        "n_episodes_learn": 100,
+        "seed": 542346723,
+        "verbose": 1,
+        "save_model_every_x_episodes": 20,
+        "log_to_file": true
+    },
+    "paths": {
+        "relpath_scenarios": "scenario/",
+        "relpath_results": "results/"
+    },
+    "environment_specific": {
+        "julia_env_file": "ETAFactoryEnv.jl",
+        "scenario_time_begin": "2021-11-29 08:00",
+        "scenario_time_end": "2021-11-29 15:50",
+        "machines_file": "productionsystem/machines.json",
+        "products_file": "productionsystem/products2.json",
+        "orders_file": "orders.json",
+        "scenario_paths": [
+            {
+                "path": "../../scenario/Strompreise_211129.csv",
+                "interpolation_method": "ffill",
+                "time_conversion_str": "ISO8601"
+            },
+            {
+                "path": "../../scenario/ambient_temperatures.csv",
+                "time_conversion_str": "ISO8601"
+            }
+        ],
+        "varsecondmap": [
+            0,
+            180,
+            300,
+            600,
+            900,
+            1800,
+            3600
+        ],
+        "cooling_efficiency": 0.8,
+        "heating_efficiency": 0.95,
+        "wait_before_standby": 180,
+        "starting_temps": {
+            "971": 20,
+            "972": 20,
+            "985": 60,
+            "981": 60
+        },
+        "price_conversion": 0.0000000002777
+    },
+    "agent_specific": {
+        "n_generations": 500,
+        "population": 100,
+        "mutations": 0.07,
+        "crossovers": 0.2,
+        "max_cross_len": 1,
+        "max_retries": 1000000
+    }
+}

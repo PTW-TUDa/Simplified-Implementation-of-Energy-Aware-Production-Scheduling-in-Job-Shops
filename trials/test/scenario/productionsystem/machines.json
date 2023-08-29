@@ -1,0 +1,84 @@
+[
+    {
+        "name": "EMAG Y",
+        "unique_job": true,
+        "parameters": {
+            "T_c": 20,
+            "beta_th_c": 140,
+            "beta_el": [
+                900,
+                0,
+                2300,
+                0
+            ],
+            "beta_c_M": 9500,
+            "beta_th_o": 232
+        },
+        "resource_id": 971,
+        "type": "machinetool",
+        "capacity": 1
+    },
+    {
+        "name": "EMAG GT",
+        "unique_job": true,
+        "parameters": {
+            "T_c": 20,
+            "beta_th_c": 140,
+            "beta_el": [
+                900,
+                0,
+                2300,
+                0
+            ],
+            "beta_c_M": 9500,
+            "beta_th_o": 232
+        },
+        "resource_id": 972,
+        "type": "machinetool",
+        "capacity": 1
+    },
+    {
+        "name": "MAFAC KEA",
+        "unique_job": false,
+        "parameters": {
+            "beta_th_wp": 0.5,
+            "beta_c_M": 45000,
+            "beta_el": [
+                180,
+                800,
+                4000
+            ],
+            "beta_th_s": 8,
+            "beta_th_h": 4000,
+            "beta_th_o": 5
+        },
+        "resource_id": 985,
+        "t_upper": 62.0,
+        "t_lower": 58.0,
+        "electric": true,
+        "type": "cleaningmachine",
+        "capacity": 42
+    },
+    {
+        "name": "MAFAC JAVA",
+        "unique_job": false,
+        "parameters": {
+            "beta_th_wp": 0.5,
+            "beta_c_M": 45000,
+            "beta_el": [
+                180,
+                800,
+                4000
+            ],
+            "beta_th_s": 8,
+            "beta_th_h": 4000,
+            "beta_th_o": 5
+        },
+        "resource_id": 981,
+        "t_upper": 62.0,
+        "t_lower": 58.0,
+        "electric": true,
+        "type": "cleaningmachine",
+        "capacity": 42
+    }
+]
