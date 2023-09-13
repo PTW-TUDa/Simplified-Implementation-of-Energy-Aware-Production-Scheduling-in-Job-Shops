@@ -32,12 +32,14 @@ solutions for adopting energy-aware production scheduling systems in industrial 
 conscious and economically viable production practices. The thesis also identifies areas for improvement and future
 research, ensuring the continuous development of energy-efficient and sustainable manufacturing processes.
 
-Keywords: Demand Response, Energy-Efficiency, Energy-Flexibility, Cyber-Physical Production System, 
+**Keywords:** Demand Response, Energy-Efficiency, Energy-Flexibility, Cyber-Physical Production System, 
           Production Machine Energy Model, Implementation Procedure, Scheduling System Architecture
 
 
 Installation
 ------------------------
+
+**This package is tested with Julia 1.9.2 and Python 3.9.13**
 
 To install and use this package you need to have `Julia <https://julialang.org/downloads/>`_ installed. Once this is 
 done, the package can be activated using the Julia Package manager. To do this, open ``julia`` in in a console, then 
@@ -53,15 +55,20 @@ in that case you have to install all dependencies manually (see Project.toml for
 
 Since this package interacts with the python library eta_utility, you should afterwards install that and ensure that 
 Julia's PyCall is linked to the correct interpreter. To do this, return to the normal terminal prompt and execute the 
-following commands
+following commands.
+
+As noted in the eta_utility (versio n2.2.4b2) documentation, this version is only compatible with specific versions of 
+pip and setuptools due to limitations in the gym and stable_baselines3 dependencies. Therefore, make sure to install 
+the correct versions first.
 
 .. code-block::
 
-    $ pip install requirements.txt
-    $ install-julia
+    $> python -m pip install setuptools==65.5 pip==21
+    $> pip install -r requirements.txt
+    $> install-julia
 
 The ``install-julia`` command is provided by eta_utility to ensure that PyCall is built correctly. After the
-commands complete, you can use this package package by calling one of the starting scripts
+commands complete, you can use this package package by calling one of the starting scripts.
 
 Usage
 -----------
