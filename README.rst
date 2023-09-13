@@ -57,7 +57,7 @@ Since this package interacts with the python library eta_utility, you should aft
 Julia's PyCall is linked to the correct interpreter. To do this, return to the normal terminal prompt and execute the 
 following commands.
 
-As noted in the eta_utility (versio n2.2.4b2) documentation, this version is only compatible with specific versions of 
+As noted in the eta_utility (version 2.2.4b2) documentation, this version is only compatible with specific versions of 
 pip and setuptools due to limitations in the gym and stable_baselines3 dependencies. Therefore, make sure to install 
 the correct versions first.
 
