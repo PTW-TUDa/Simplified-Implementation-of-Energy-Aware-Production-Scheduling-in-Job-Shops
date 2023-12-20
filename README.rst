@@ -82,7 +82,6 @@ Citing this project
 
 Please cite this project using the publication:
 
-.. code-block::
-
-    Grosch, B. (2023) Simplified Implementation of Energy-Aware Production Scheduling.
-    Technische Universität Darmstadt. Dissertation. Publication in Review.
+    Grosch, B. (2023) Simplified Implementation of Energy-Aware Production 
+    Scheduling (Doctoral dissertation). Technische Universität Darmstadt. 
+    Fachbereich Maschinenbau. `https://doi.org/10.26083/tuprints-00026459 <https://doi.org/10.26083/tuprints-00026459>`_
